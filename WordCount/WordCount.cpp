@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
         else if (strcmp(argv[1], "-w") == 0) {
             int temp = 0, j, count = 0;
             for (j = 0; content[j] != '\0'; j++) {
-                if (content[j] == ' ' || content[j] == '\n') {
+                if (content[j] == ' ' || content[j] == '\n' || content[j] == ',') {
                     if (temp != 0) {
                         temp = 0;
                         count++;
